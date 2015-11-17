@@ -1,0 +1,182 @@
+body {
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+
+h1 { font-size: 36px; }
+h2 { font-size: 30px; }
+h3 { font-size: 24px; }
+h4 { font-size: 18px; }
+
+.container {
+	max-width: 980px !important;
+}
+
+.thumbnail {
+	border: 2px solid black;
+	border-radius: 5px;
+}
+
+.section {
+	margin-top: 60px;
+}
+
+.section h1 {
+	text-align: center;
+}
+
+.text-center {
+	text-align: center;
+}
+
+/*
+ *	Navigation
+*/
+
+.nav {
+	margin-top: 8px;
+	height: 35px;
+	line-height: 35px;
+	vertical-align: middle;
+}
+
+.nav ul {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	text-align: right;
+}
+
+.nav li {
+	height: 35px;
+	line-height: 35px;
+	display: inline;
+	padding: 5px;
+	color: black;
+}
+
+.nav a {
+	color: black;
+	text-decoration: underline;
+}
+
+
+/*
+ *	Header
+*/
+
+header {
+	height: 80px;
+	line-height: 80px;
+	vertical-align: middle;
+	width: 100%;
+	background-color: #A60000;
+	color: white;
+	font-size: 36px;
+}
+
+header img {
+	vertical-align: middle;
+}
+
+.slideshow {}
+
+.slideshow .caption {
+	position: absolute;
+	float: left;
+	height: 50px;
+	background-color: rgba(68, 68, 68, 0.5);
+	width: 980px;
+	color: white;
+	
+}
+
+.slideshow .captionTop {
+	padding-left: 20px;
+	padding-top: 5px;
+}
+
+.slideshow .captionBottom {
+	margin-top: 294px;
+	font-size: 26px;
+	padding-top: 6px;
+}
+
+
+/*
+ *	Services
+*/
+
+.service {
+	margin-top: -100px;
+}
+
+.services .col {
+	padding: 12px;
+	text-align: center;
+}
+
+.item {
+	color: #D9D9D9;
+	background: grey;
+	text-align: center;
+	padding: 12px;
+	width: 280px;
+	min-height: 355px;
+}
+
+.item .title {
+	margin-bottom: 8px;
+	height: 31px;
+}
+
+.item .desc {
+	text-align: left;
+	font-size: 110%;
+}
+
+
+/*
+ *	About
+*/
+
+.about {
+	text-align: center;
+}
+
+.about .outline, .about .summary {
+	color: #D9D9D9;
+	background: grey;
+	padding: 6px;
+	min-height: 450px;
+}
+
+.about .summary {
+	font-size: 18px;
+}
+
+.about .outline ul {
+	margin: 15px;
+}
+
+.about .outline ul > li:first-child {
+	font-weight: bold;
+}
+
+.about .summary p {
+	margin-top: 15px;
+}
+
+
+/*
+ *	Footer
+ */
+footer {
+	font-size: 20px;
+	margin-top: 60px;
+	height: 80px;
+	line-height: 80px;
+	vertical-align: middle;
+	width: 100%;
+	background-color: #A60000;
+	color: white;
+}
