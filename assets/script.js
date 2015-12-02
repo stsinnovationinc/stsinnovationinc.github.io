@@ -15,6 +15,7 @@ var langTable = {
 		'string_home': 'HOME',
 		'string_services': 'SERVICES',
 		'string_about': 'ABOUT',
+		'string_contact': 'CONTACT',
 		'string_it_consulting': 'IT Consulting',
 		'string_it_consulting_desc': 'Our consulting services are all about helping our clients succeed. We can help develop your business and improve your productivity with IT solutions tailored just for you.',
 		'string_system_integration': 'System Integration',
@@ -50,6 +51,7 @@ var langTable = {
 		'string_home': 'HOME',
 		'string_services': 'サービス',
 		'string_about': '会社情報',
+		'string_contact': '間に合せ',
 		'string_it_consulting': 'ITコンサルティング',
 		'string_it_consulting_desc': 'お客様のビジネス成長やサービス向上のために､事業戦略を支える IT 戦略を､お客様と共に考え､ご支援致します｡',
 		'string_system_integration': 'システム開発',
@@ -60,7 +62,7 @@ var langTable = {
 		'string_erp_consulting_desc': 'SAP、Oracleを中心に、業務コンサルティングから基盤運用までERPを活用する上で必要なすべてのソリューションをワンストップでご提供致します。',
 		'string_ecommerce_solutions': 'eコマースソリューション',
 		'string_ecommerce_solutions_desc': 'モバイル端末を活用した受発注システム、ECサイトの企画/設計/構築/保守をワンストップでご提供致します。',
-		'string_startup_support': '<h4 class="title text-center">日系企業向け米国進出支援</h4>',
+		'string_startup_support': '日系企業向け米国進出支援',
 		'string_startup_support_desc': '日系企業が米国へビジネス進出する際に必要となるサービスを、各種パートナー会社とともにパッケージとしてご提供致します。',
 		'string_company_outline': '会社概要',
 		'string_co_name_1': '会社名',
@@ -85,18 +87,19 @@ var langTable = {
 
 var swapLanguage = function(langCode) {
 	// DEBUG
-	console.log(langCode);
+	//console.log(langCode);
 
 	if(langCode === 'en' || langCode === 'jp') {
 		// Iterate through each language's strings and update the page
 		for(var key in langTable[langCode]) {
 			var val = langTable[langCode][key];
-			console.log('key:', key, '|', 'value:', val);
+			//console.log('key:', key, '|', 'value:', val);
 			var elems = document.getElementsByClassName(key);
-			console.log(elems);
+			//console.log(elems);
 
 			for(var i = 0; i < elems.length; i++) {
 				elems[i].innerHTML = val;
+				console.log(key + ':', key, ', val:', val);
 			}
 		}
 	}
