@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<base href="http://sts-innovation.com/jp/">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>STS Innovation, Inc.</title>
+		<link rel="alternate" hreflang="x-default" href="http://sts-innovation.com/en/" />
+		<link rel="alternate" hreflang="ja" href="http://sts-innovation.com/jp/" />
+		<link rel="stylesheet" type="text/css" href="assets/bootstrap-grid/grid.min.css"></link>
+		<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="assets/style.css"></link>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 nav">
+					<a href="/en/" onclick="swapLanguage('en');">ENGLISH</a>&nbsp;&nbsp;&nbsp;
+					|
+					&nbsp;&nbsp;&nbsp;<a href="/jp/" onclick="swapLanguage('jp');">日本語</a>
+				</div>
+				<div class="col-sm-6 nav">
+					<ul>
+						<li><a href="./"><span class="string_home">HOME</span></a></li>
+						<li><a href="./about/"><span class="string_about">会社情報</a></li>
+						<li><a href="./contact/"><span class="string_contact">間に合せ</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12" style="margin-top: -5px">
+							<img src="assets/logo.png"> STS INNOVATION, INC.
+					</div>
+				</div>
+			</div>
+		</header>
+	
+    	
+<main class="container">
+	<div class="row">
+		<h1 class="col-xs-12 text-center">間に合せ</h1>
+		<div class="col-md-6 col-md-offset-3">
+			<script language="javascript" src="assets/sa_htmlform.js"></script>
+			<div id="sa_contactdiv" style="text-align: center;">
+				<form name="sa_htmlform" id="sa_htmlform" style="margin:0px" onsubmit="return sa_contactform()">
+					<table>
+						<tr><td>名前：<br><input type="text" name="name" /></td></tr>
+						<tr><td>メールアドレス：<span style="color: #D70000">*</span><br><input type="text" name="email" required="true" /></td></tr>
+						<tr><td>メッセージ：<span style="color: #D70000">*</span><br><textarea name="message" cols="42" rows="9" required="true"></textarea></td></tr>
+						<tr><td><input type="submit" value="送信" style="font-weight:bold"></td></tr>
+					</table>
+				</form>
+			</div>
+		</div>
+	</div>
+</main>
+    
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 text-center">
+					2015 &copy; STS Innovation, Inc. All Rights Reserved.
+					<br>
+					<a href="./privacy/">Privacy Policy</a>&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="./disclaimer/">Disclaimer</a>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

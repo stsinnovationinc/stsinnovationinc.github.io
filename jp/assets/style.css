@@ -1,0 +1,224 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'PT Sans Narrow', sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+
+h1 { font-size: 36px; }
+h2 { font-size: 30px; }
+h3 { font-size: 24px; }
+h4 { font-size: 18px; }
+
+.img-responsive {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+.thumbnail {
+	border: 2px solid black;
+	border-radius: 5px;
+	margin: auto;
+}
+
+.section {
+	margin-top: 60px;
+}
+
+.section h1 {
+	text-align: center;
+}
+
+.text-center { text-align: center !important; }
+
+/*
+ *	Navigation
+*/
+
+.nav {
+	margin-top: 8px;
+	height: 35px;
+	line-height: 35px;
+	vertical-align: middle;
+}
+
+.nav ul {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	text-align: right;
+}
+
+.nav li {
+	height: 35px;
+	line-height: 35px;
+	display: inline;
+	padding: 5px;
+	color: black;
+}
+
+.nav a {
+	color: black;
+	text-decoration: underline;
+}
+
+
+/*
+ *	Header
+*/
+
+header {
+	height: 80px;
+	line-height: 80px;
+	vertical-align: middle;
+	width: 100%;
+	background-color: #A60000;
+	color: white;
+	font-size: 36px;
+}
+
+header img {
+	vertical-align: middle;
+}
+
+.marquee {
+		background-image: url(banner.jpg);
+		background-size: cover;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		
+		padding: 41% 0% 1% 64%;
+
+		color: white;
+		font-size: 40px;
+		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	}
+
+
+/*
+ *	Services
+*/
+
+.service {
+	margin-top: -100px;
+}
+
+.services .col {
+	padding: 12px;
+	text-align: center;
+}
+
+.item {
+	text-align: center;
+	padding: 8px;
+	width: 90%;
+	height: 335px;
+	margin: 0px auto 8px auto;
+}
+
+.item h3 {
+	margin: 0px;
+}
+
+.item .title {
+	margin-bottom: 8px;
+	height: 31px;
+}
+
+.item img {
+	margin: 0px auto 5px auto;
+}
+
+.item .desc {
+	text-align: left;
+	font-size: 110%;
+	margin: 0px;
+}
+
+
+/*
+ *	About
+*/
+
+.about {
+	max-width: 990px;
+	margin: auto;
+}
+
+.about .summary, .about .outline {
+	font-size: 18px;
+}
+
+.about .outline {
+	padding-left: 30px;
+}
+
+.about .outline h3{
+	margin-top: 24px;
+	margin-bottom: 0px;
+}
+
+.about .outline ul {
+	text-align: left;
+	list-style-type: none;
+	padding: 0px;
+}
+
+.about .outline ul > li:first-child {
+	font-weight: bold;
+}
+
+.about .summary h2 {
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+
+.about .summary p {
+	margin: 30px 30px auto auto;
+}
+
+.about .summary h2 {
+	margin-right: 20px;
+}
+
+
+/*
+ * Contact
+ */
+
+#sa_contactdiv table, #sa_contactdiv input, #sa_contactdiv textarea {
+	width: 100%;
+}
+
+#sa_contactdiv input {
+	height: 30px;
+	font-size: 12pt;
+}
+
+#sa_contactdiv form {
+	text-align: left;
+}
+
+
+/*
+ *	Footer
+ */
+footer {
+	font-size: 20px;
+	margin-top: 60px;
+	height: 80px;
+	line-height: 30px;
+	padding-top: 10px;
+	vertical-align: middle;
+	width: 100%;
+	background-color: #A60000;
+	color: white;
+}
+
+footer a {
+	color: inherit;
+}
