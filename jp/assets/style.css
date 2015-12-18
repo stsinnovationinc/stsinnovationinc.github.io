@@ -25,6 +25,12 @@ h4 { font-size: 18px; }
 	margin: auto;
 }
 
+.pull-right {
+	float: right !important;
+}
+
+.text-center { text-align: center !important; }
+
 .section {
 	margin-top: 60px;
 }
@@ -33,17 +39,25 @@ h4 { font-size: 18px; }
 	text-align: center;
 }
 
-.text-center { text-align: center !important; }
 
 /*
  *	Navigation
 */
 
 .nav {
-	margin-top: 8px;
+	margin-top: 4px;
+	margin-bottom: 4px;
 	height: 35px;
 	line-height: 35px;
 	vertical-align: middle;
+	font-size: 11pt;
+}
+
+/* equivalent to @screen-sm-min */
+@media(min-width: 768px) {
+	.nav {
+		font-size: 13pt;
+	}
 }
 
 .nav ul {
@@ -72,31 +86,41 @@ h4 { font-size: 18px; }
 */
 
 header {
-	height: 80px;
-	line-height: 80px;
-	vertical-align: middle;
 	width: 100%;
 	background-color: #A60000;
 	color: white;
-	font-size: 36px;
-}
-
-header img {
-	vertical-align: middle;
+	font-size: 40px;
+	height: 80px;
+	padding-top: 15px;
 }
 
 .marquee {
-		background-image: url(banner.jpg);
-		background-size: cover;
-		background-position: 50% 50%;
-		background-repeat: no-repeat;
-		
-		padding: 41% 0% 1% 64%;
+	background-image: url(banner2.jpg);
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	width: 100%;
+	padding: 3% 0% 41% 0%;
+	text-align: center;
+	color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 
-		color: white;
-		font-size: 40px;
-		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-size: 40px;
+}
+
+@media (min-width: 992px) {
+	.marquee {
+		font-size: 60px;
 	}
+}
+
+.logo {
+	width: 69px;
+	height: 52px;
+	vertical-align: middle;
+	margin-top: -12px;
+}
+
 
 
 /*
@@ -117,7 +141,7 @@ header img {
 	padding: 8px;
 	width: 90%;
 	height: 335px;
-	margin: 0px auto 8px auto;
+	margin: 0px auto;
 }
 
 .item h3 {
