@@ -20,7 +20,6 @@ h4 { font-size: 18px; }
 }
 
 .thumbnail {
-	border: 2px solid black;
 	border-radius: 5px;
 	margin: auto;
 }
@@ -29,10 +28,12 @@ h4 { font-size: 18px; }
 	float: right !important;
 }
 
+.text-left { text-align: left !important; }
 .text-center { text-align: center !important; }
+.text-right { text-align: right !important; }
 
 .section {
-	margin-top: 60px;
+	margin-top: 100px;
 }
 
 .section h1 {
@@ -47,37 +48,24 @@ h4 { font-size: 18px; }
 .nav {
 	margin-top: 4px;
 	margin-bottom: 4px;
-	height: 35px;
-	line-height: 35px;
+	line-height: 30px;
 	vertical-align: middle;
-	font-size: 11pt;
-}
-
-/* equivalent to @screen-sm-min */
-@media(min-width: 768px) {
-	.nav {
-		font-size: 13pt;
-	}
-}
-
-.nav ul {
-	margin: 0px;
-	padding: 0px;
-	list-style-type: none;
-	text-align: right;
-}
-
-.nav li {
-	height: 35px;
-	line-height: 35px;
-	display: inline;
-	padding: 5px;
-	color: black;
+	font-size: 12pt;
 }
 
 .nav a {
 	color: black;
 	text-decoration: underline;
+}
+
+@media (min-width : 768px) {
+	.nav-links {
+		text-align: right;	
+	}
+}
+
+.nav-lang {
+	text-align: right;
 }
 
 
@@ -90,7 +78,7 @@ header {
 	background-color: #A60000;
 	color: white;
 	font-size: 40px;
-	height: 80px;
+	height: 40px;
 	padding-top: 15px;
 }
 
@@ -111,14 +99,12 @@ header {
 @media (min-width: 992px) {
 	.marquee {
 		font-size: 60px;
+		padding: 3% 34% 41% 0%;
 	}
 }
 
 .logo {
-	width: 69px;
-	height: 52px;
-	vertical-align: middle;
-	margin-top: -12px;
+	margin-top: 4px;
 }
 
 

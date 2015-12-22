@@ -14,23 +14,28 @@
 		<link rel="stylesheet" type="text/css" href="assets/style.css"></link>
 	</head>
 	<body>
-		<div class="container">
+		<div class="container-fluid">
 			<div class="row">
-				<div class="col-xs-12 nav">
-					<a href="/en/" onclick="swapLanguage('en');">ENGLISH</a>&nbsp;&nbsp;&nbsp;
-					|
-					&nbsp;&nbsp;&nbsp;<a href="/jp/" onclick="swapLanguage('jp');">日本語</a>
-					<ul class="pull-right">
-						<li><a href="./"><span class="string_home">HOME</span></a></li>
-						<li><a href="./about/"><span class="string_about">ABOUT</a></li>
-						<li><a href="./contact/"><span class="string_contact">CONTACT</a></li>
-					</ul>
+				<div class="col-sm-6">
+					<img class="logo img-responsive" src="assets/HomePageLogo.png">
+				</div>
+				<div class="col-sm-6 nav">
+					<div class="row">
+						<div class="col-xs-9 col-sm-12 nav-links">
+							<a href="./"><span class="string_home">HOME</span></a>
+							<a href="./#services"><span class="string_services">SERVICES</span></a>
+							<a href="./about/"><span class="string_about">ABOUT</a>
+							<a href="./contact/"><span class="string_contact">CONTACT</a>
+						</div>
+						<div class="col-xs-3 col-sm-12 nav-lang">
+							<a href="/en/" onclick="swapLanguage('en');">en</a> / <a href="/jp/" onclick="swapLanguage('jp');">jp</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 
-<div class="marquee"><img class="logo" src="assets/logo.png"> STS&nbsp;INNOVATION,&nbsp;INC.</div>
-
+<div class="marquee"> &nbsp;</div>
 <main class="container">
 	
 	<div class="row section">
@@ -54,18 +59,18 @@
 				</div>
 				<div class="col-md-4">
 					<div class="item">
-						<h3 class="title text-center">Japan Market Entry</h3>
-						<img class="img-responsive thumbnail" src="assets/service_entry.jpg">
-						<p class="desc">Need help launching your IT products and services in Japan? We can help by leveraging our existing customer base and business partners in Japan.</p>
+						<h3 class="title text-center">Business Process Outsourcing</h3>
+						<img class="img-responsive thumbnail" src="assets/outsourcing_services.jpg">
+						<p class="desc">Need help with accounting, payroll processing, or general administration? Our Japanese-bilingual staff are ready to assist.</p>
 					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-4">
 					<div class="item">
-						<h3 class="title text-center">Business Process Outsourcing</h3>
-						<img class="img-responsive thumbnail" src="assets/outsourcing_services.jpg">
-						<p class="desc">Need help with accounting, payroll processing, or general administration? Our Japanese-bilingual staff are ready to assist.</p>
+						<h3 class="title text-center">Japan Market Entry</h3>
+						<img class="img-responsive thumbnail" src="assets/service_entry.jpg">
+						<p class="desc">Need help launching your IT products and services in Japan? We can help by leveraging our existing customer base and business partners in Japan.</p>
 					</div>
 				</div>
 				<div class="col-md-4">
