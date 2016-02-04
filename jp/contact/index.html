@@ -42,14 +42,40 @@
 		<div class="col-md-6 col-md-offset-3">
 			<script language="javascript" src="assets/sa_htmlform.js"></script>
 			<div id="sa_contactdiv" style="text-align: center;">
-				<form name="sa_htmlform" id="sa_htmlform" style="margin:0px" onsubmit="return sa_contactform()">
+				<form name="contactForm" id="contactForm" style="margin:0px" onsubmit="return submitForm();">
 					<table>
-						<tr><td>名前：<br><input type="text" name="name" /></td></tr>
-						<tr><td>メールアドレス：<span style="color: #D70000">*</span><br><input type="text" name="email" required="true" /></td></tr>
-						<tr><td>メッセージ：<span style="color: #D70000">*</span><br><textarea name="message" cols="42" rows="9" required="true"></textarea></td></tr>
-						<tr><td><input type="submit" value="送信" style="font-weight:bold"></td></tr>
+						<tr>
+							<td>
+								名前：
+								<br>
+								<input type="text" name="name" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								メールアドレス：<span style="color: #D70000">*</span>
+								<br>
+								<input type="email" name="email" required="true" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								メッセージ：<span style="color: #D70000">*</span>
+								<br>
+								<textarea name="message" cols="42" rows="9" required="true"></textarea>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="text" name="_gotcha" style="display: none;" />
+								<input id="btnSubmit" type="submit" value="送信" style="font-weight:bold">
+							</td>
+						</tr>
 					</table>
 				</form>
+				<div id="formSent" style="display: none;">
+					お問合せ頂きありがとうございました。担当者より連絡させて頂きます。
+				</div>
 			</div>
 		</div>
 	</div>
