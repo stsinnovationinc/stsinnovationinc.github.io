@@ -171,6 +171,15 @@ header {
 	text-align: justify;
 }
 
+a.item-link {
+	text-decoration: none;
+	color: inherit;
+}
+
+a.item-link:hover {
+	text-decoration: underline;
+}
+
 
 /*
  *	About
