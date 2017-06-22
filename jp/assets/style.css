@@ -46,15 +46,17 @@ h4 { font-size: 18px; }
  *	Navigation
 */
 
+.top .row {
+	padding: 0.5em 0;
+}
+
 .logo {
-	padding-top: 4px;
-	padding-bottom: 4px;
+	margin: auto;
+	margin-bottom: 0.5em;
 }
 
 .nav {
-	padding-top: 4px;
-	padding-bottom: 4px;
-	font-size: 11pt;
+	font-size: 0.8em;
 	color: #76736c;
 	text-align: right;
 }
@@ -66,6 +68,9 @@ h4 { font-size: 18px; }
 	display: inline-block;
 	text-align: center;
 	margin-bottom: 2px;
+	height: 1.75em;
+	line-height: 1.6em;
+	vertical-align: middle;
 }
 
 .nav a:hover {
@@ -91,8 +96,14 @@ h4 { font-size: 18px; }
 		text-align: right;
 	}
 
-	.nav-links {
-		margin-top: 8px;
+	.top .row {
+		display: flex;
+		align-items: center;
+	}
+
+	.logo {
+		margin: initial;
+		margin-bottom: 0;
 	}
 }
 
@@ -124,6 +135,11 @@ header {
 	.marquee {
 		font-size: 60px;
 		padding: 3% 34% 41% 0%;
+	}
+
+	.top .row {
+		display: flex;
+		align-items: center;
 	}
 }
 
@@ -249,7 +265,7 @@ a.item-link:hover {
  *	Footer
  */
 footer {
-	font-size: 20px;
+	font-size: 14px;
 	margin-top: 60px;
 	height: 80px;
 	line-height: 30px;
